@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.titulo-princial {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 47.4px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    position: relative;
+    left: 70px;
+    color: #11175E;
+    
+}
+
+header {
+    padding: 30px;
+}
+
+    .barras {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px; /* Remove espaçamento entre os elementos */
+        align-items: center;
+        position: relative;
+        left: 70px;
+    }
+
+    .barra1{
+        text-align: center;
+        display: flex;
+        justify-self: center;
+        position: relative;
+        left: 50px;
+        padding: 16px 24px 16px 24px;
+        gap: 10px;
+        border-radius: 8px 0px 0px 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        width: 60px;
+        height: 40px;
+    }   
+
+
+    .barra1 input {
+        text-indent: 3px;
+        border: 1px solid rgba(0, 0, 0, 0.233);
+        
+    }
+
+    .barra2 {
+        display: flex;
+        position: relative;
+        right: 40px;
+        padding: 16px 24px 16px 24px;
+        gap: 10px;
+        border-radius: 8px 0px 0px 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        width: 60px;
+        height: 40px;
+
+    }
+
+    .barra2 input {
+        text-indent: 3px;
+        border: 1px solid rgba(0, 0, 0, 0.233);
+    }
+
+
+
+.barra3 input{
+    width: 30px;
+    height: 30px;
+    gap: 0px;
+    border: 4px;
+    opacity: 0px;
+    text-align: center;
+    justify-items: center;
+    position: relative;
+    right: 260px;
+    background-color: #2D70FD;
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+main {
+    
+}
+
+
+
+
+
+
+
+
