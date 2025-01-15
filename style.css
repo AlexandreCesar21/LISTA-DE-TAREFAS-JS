@@ -197,3 +197,11 @@ main {
 .button-conclui input:hover{
     background-color: #2d6ffdc5;
 }
+
+footer > div{
+    text-align: end;
+    position: relative;
+    right: 20px;
+    color: #B1BACB;
+    font-size: 1.6em;
+}
