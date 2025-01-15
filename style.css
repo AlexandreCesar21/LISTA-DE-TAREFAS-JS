@@ -205,3 +205,136 @@ footer > div{
     color: #B1BACB;
     font-size: 1.6em;
 }
+
+
+
+@media(max-width: 500px) {
+    .titulo-princial {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        left: 150px;
+        font-size: 1.5em;
+    }
+    
+
+
+    .barras {
+        display: grid;
+        grid-template-columns: 1fr; /* Cada item ocupa toda a largura */
+        grid-auto-flow: row; /* Garante disposição em linhas */
+        gap: 5px; /* Espaçamento entre os elementos */
+        align-items: center;
+        position: relative;
+        left: 120px;
+    }
+
+    .barras > .barra1 > input {
+        width: 370px;
+        text-indent: 5px;
+        position: relative;
+        right: 50px;
+    }
+
+    .barras > .barra2 > input {
+        width: 370px;
+        text-indent: 5px;
+        position: relative;
+        left: 78px;
+        bottom: 19px;
+    }
+    .barra3 {
+        position: relative;
+        left: 293px;
+        bottom: 20px;
+    }
+
+    .barra3 input {
+        width: 370px;
+        font-size: 2em;
+    }
+
+
+    .lista-tarefa {
+        position: relative;
+        right: 99px;
+        bottom: 20px;
+        width: 370px;
+        height: 230px;
+    }
+
+    .lista-tarefa > ul > li{
+        display: flex; /* Flexbox para conteúdo interno do <li> */
+        align-items: center; /* Centraliza o conteúdo do <li> verticalmente */
+        justify-content: center; /* Centraliza o conteúdo do <li> horizontalmente */
+        margin: 10px;
+        position: relative;
+        top: 3px;
+        font-size: 1.1em;
+        left: 140px;
+        
+    }
+
+
+    .col-texs {
+        display: grid;
+        grid-template-columns: 1fr; /* Cada item ocupa toda a largura */
+        grid-auto-flow: row; /* Garante disposição em linhas */
+        position: relative;
+        top: 64px;
+        right: 27px;
+        text-align: left;
+        font-size: 17px;
+    
+    }
+    
+    
+    
+    .status {
+        position: relative;
+        right: 290px;
+        bottom: 5px;
+        color: #B1BACB;
+        border: 1px solid;
+        border-radius: 49px;
+        padding: 5px;
+        font-weight: normal;
+    }
+    
+    .data {
+        position: relative;
+        right: 280px;
+        top: 3px;
+        color: #B1BACB;
+        font-weight: normal;
+    }
+    
+    
+    .button-conclui {
+        position: relative;
+        right: 330px;
+        top: 125px;
+    }
+
+    .button-conclui input {
+        font-size: 1.2em;
+    }
+    footer > div {
+        text-align: end;
+        position: relative;
+        left: 280px;
+        bottom: 20px;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
