@@ -4,16 +4,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 
 .titulo-princial {
-    font-size: 20px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 47.4px;
     letter-spacing: 0.01em;
     text-align: left;
     text-decoration-skip-ink: none;
     position: relative;
-    left: 70px;
+    left: 230px;
     color: #11175E;
     
 }
@@ -42,41 +46,42 @@ header {
         border-radius: 8px 0px 0px 0px;
         border: 1px 0px 0px 0px;
         opacity: 0px;
-        width: 60px;
-        height: 40px;
+        
     }   
 
 
     .barra1 input {
         text-indent: 3px;
         border: 1px solid rgba(0, 0, 0, 0.233);
-        
+        width: 254.5px;
+        height: 50px;
+        font-size: 16px;
     }
 
     .barra2 {
         display: flex;
         position: relative;
-        right: 40px;
+        right: 70px;
         padding: 16px 24px 16px 24px;
         gap: 10px;
         border-radius: 8px 0px 0px 0px;
         border: 1px 0px 0px 0px;
         opacity: 0px;
-        width: 60px;
-        height: 40px;
 
     }
 
     .barra2 input {
         text-indent: 3px;
         border: 1px solid rgba(0, 0, 0, 0.233);
+        width: 254.5px;
+        height: 50px;
+        font-size: 16px;
+
     }
 
 
 
 .barra3 input{
-    width: 30px;
-    height: 30px;
     gap: 0px;
     border: 4px;
     opacity: 0px;
@@ -86,20 +91,105 @@ header {
     right: 260px;
     background-color: #2D70FD;
     color: white;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
 }
 
 
 
 main {
-    
+    position: relative;
+    left: 280px;
+    width: 586px;
+    height: 325px;
+    gap: 8px;
+    opacity: 0px;
+    border: 2px solid black;
+    }
+
+
+
+
+
+.lista-tarefa {
+    border: 2px solid #eeeeee;
+    width: 606px;
+    height: 103px;
+    position: relative;
+    right: 10px;
+    list-style: none;
+}
+
+.lista-tarefa > ul {
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox para alinhar os itens */
+    justify-content: center; /* Alinha verticalmente os itens */
+    align-items: center; /* Alinha horizontalmente os itens */
+}
+
+.lista-tarefa > ul > li{
+    display: flex; /* Flexbox para conteúdo interno do <li> */
+    align-items: center; /* Centraliza o conteúdo do <li> verticalmente */
+    justify-content: center; /* Centraliza o conteúdo do <li> horizontalmente */
+    margin: 10px;
+    position: relative;
+    top: 3px;
+    font-size: 18px;
+    white-space: nowrap;
+    left: 69px;
+    color: #11175E;
+    font-weight: bold;
+}
+
+.col-texs {
+    display: grid;
+    grid-auto-flow: column;
+    position: relative;
+    top: 44px;
+    text-align: left;
+    font-size: 17px;
+
 }
 
 
 
+.status {
+    position: relative;
+    right: 290px;
+    bottom: 5px;
+    color: #B1BACB;
+    border: 1px solid;
+    border-radius: 49px;
+    padding: 5px;
+    font-weight: normal;
+}
+
+.data {
+    position: relative;
+    right: 280px;
+    top: 3px;
+    color: #B1BACB;
+    font-weight: normal;
+}
 
 
+.button-conclui {
+    position: relative;
+    right: 100px;
+}
 
 
+.button-conclui input{
+    width: 121px;
+    height: 44px;
+    position: relative;
+    right: 60px;
+    top: 16px;
 
+    color: white;
+    background-color: #2D70FD;
+    font-weight: bold;
+    border: none;
+}
