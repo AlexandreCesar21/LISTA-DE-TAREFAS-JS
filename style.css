@@ -209,6 +209,15 @@ footer > div{
 
 
 @media(max-width: 500px) {
+
+    
+    html {
+        overflow-x: hidden;
+    }
+
+
+
+
     .titulo-princial {
         white-space: nowrap;
         overflow: hidden;
@@ -333,8 +342,39 @@ footer > div{
 
 
 
+@media(max-width: 300px) {
+    .titulo-princial {
+        width: 700px;
+    }
 
+    .barras > .barra2 > input {
+        width: 370px;
+        bottom: 20px;
+        position: relative;
+        left:  70px;
+    }
 
+    .barra3 input {
+        position: relative;
+        right: 270px;
+    }
+
+    main {
+        padding-bottom: 290px;
+    
+    }
+    
+
+    footer {
+        width: 500px;
+    }
+
+    footer div{
+        position: relative; 
+        right: 800px;
+        font-size: 3em;
+      }
+}
 
 
 
