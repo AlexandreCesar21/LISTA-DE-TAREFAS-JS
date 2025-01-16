@@ -212,6 +212,31 @@ footer > div{
     font-size: 1.6em;
 }
 
+@media(max-width: 1800px){
+
+    .titulo-princial {
+        position: relative;
+        left: 350px;
+        font-size: 2em;
+    }
+
+
+    .barras {
+        position: relative;
+        left: 144px;
+    }
+
+    .barra2 {
+        position: relative;
+        right: 130px;
+    }
+
+    .barra3 {
+        position: relative;
+        right: 160px;
+    }
+
+}
 
 
 @media(max-width: 500px) {
