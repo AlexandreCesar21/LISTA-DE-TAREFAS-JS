@@ -212,7 +212,7 @@ footer > div{
     font-size: 1.6em;
 }
 
-@media(max-width: 1800px){
+@media(max-width: 1200px){
 
     .titulo-princial {
         position: relative;
