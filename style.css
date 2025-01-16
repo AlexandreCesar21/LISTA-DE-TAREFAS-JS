@@ -194,6 +194,12 @@ main {
 }
 
 
+.lista-tarefa li.concluida {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
 .button-conclui input:hover{
     background-color: #2d6ffdc5;
 }
