@@ -102,17 +102,23 @@ main {
     position: relative;
     left: 280px;
     width: 586px;
-    height: 325px;
+    height: 925px;
     gap: 8px;
     opacity: 0px;
+    }
+
+    section {
+        position: relative;
+        right: 27px;
+        text-align: center;
+        width: 120vh;
+        height: 100vh;
     }
 
 
 
 
-
 .lista-tarefa {
-    border: 2px solid #eeeeee;
     width: 606px;
     height: 103px;
     position: relative;
@@ -121,32 +127,42 @@ main {
 }
 
 .lista-tarefa > ul {
-    padding: 0;
-    margin: 0;
-    display: flex; /* Flexbox para alinhar os itens */
-    justify-content: center; /* Alinha verticalmente os itens */
-    align-items: center; /* Alinha horizontalmente os itens */
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding: 0; /* Remove o espaçamento interno */
+    margin: 0; /* Remove o espaçamento externo */
+    display: flex;
+    flex-direction: column; /* Exibe os itens em coluna */
+    gap: 10px; /* Espaçamento entre os itens da lista */
+    
 }
 
 .lista-tarefa > ul > li{
     display: flex; /* Flexbox para conteúdo interno do <li> */
+    padding: 10px;
+    padding-left: 50px;
+    padding-bottom: 40px;
     align-items: center; /* Centraliza o conteúdo do <li> verticalmente */
-    justify-content: center; /* Centraliza o conteúdo do <li> horizontalmente */
+    justify-content:left; /* Centraliza o conteúdo do <li> horizontalmente */
     margin: 10px;
     position: relative;
     top: 3px;
     font-size: 18px;
     white-space: nowrap;
-    left: 69px;
+    left: 7px;
     color: #11175E;
     font-weight: bold;
+    border: 2px solid #eeeeee;
+    height: 100px;
+    width: 556px;
+    
 }
 
 .col-texs {
     display: grid;
     grid-auto-flow: column;
-    position: relative;
-    top: 44px;
+    position: absolute;
+    top: 99px;
+    left: 340px;
     text-align: left;
     font-size: 17px;
 
@@ -175,8 +191,10 @@ main {
 
 
 .button-conclui {
-    position: relative;
-    right: 100px;
+    position: absolute;
+    right: -28px;
+    flex-shrink: 0; /* Impede que o botão seja redimensionado */
+
 }
 
 
@@ -291,12 +309,12 @@ footer > div{
         width: 370px;
         text-indent: 5px;
         position: relative;
-        left: 78px;
+        left: 135px;
         bottom: 19px;
     }
     .barra3 {
         position: relative;
-        left: 293px;
+        left: 287px;
         bottom: 20px;
     }
 
@@ -306,76 +324,127 @@ footer > div{
     }
 
 
+    main {
+        left: 0; /* Centraliza o main */
+        width: 100%; /* Adapta para a largura total da tela */
+        height: auto; /* Permite altura dinâmica */
+        gap: 8px;
+        opacity: 1; /* Garante visibilidade */
+    }
+
+    section {
+        right: 0;
+        text-align: center;
+        width: 100%; /* Ajusta a largura para caber na tela */
+        height: auto; /* Permite altura dinâmica */
+    }
+
     .lista-tarefa {
+        width: 100%; /* Ocupa toda a largura do container */
         position: relative;
-        right: 99px;
-        bottom: 20px;
-        width: 370px;
-        height: 230px;
+        padding: 0 10px; /* Adiciona espaçamento lateral */
     }
-
-    .lista-tarefa > ul > li{
-        display: flex; /* Flexbox para conteúdo interno do <li> */
-        align-items: center; /* Centraliza o conteúdo do <li> verticalmente */
-        justify-content: center; /* Centraliza o conteúdo do <li> horizontalmente */
-        margin: 10px;
+    
+    .lista-tarefa > ul {
+        list-style: none; /* Remove marcadores de lista */
+        padding: 0; /* Remove espaçamento interno */
+        margin: 0; /* Remove espaçamento externo */
+        display: flex;
+        flex-direction: column; /* Alinha os itens em coluna */
+        gap: 10px; /* Espaçamento entre os itens da lista */
+       
+    }
+    
+    .lista-tarefa > ul > li {
+        display: flex; /* Flexbox para conteúdo interno */
+        flex-direction: column; /* Coloca os elementos internos em coluna */
+        padding: 35px; /* Espaçamento interno */
+        padding-right: 50px;
+        background-color: #f9f9f9; /* Cor de fundo para destaque */
+        border: 1px solid #dddddd; /* Borda para separar itens */
+        border-radius: 5px; /* Borda arredondada */
+        width: 78%; /* Ocupa toda a largura disponível */
+        height: 200px;
+        box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
         position: relative;
-        top: 3px;
-        font-size: 1.1em;
-        left: 140px;
-        
-    }
-
-
+        left: 160px;
+        justify-items: ce;
+        }
+    
     .col-texs {
-        display: grid;
-        grid-template-columns: 1fr; /* Cada item ocupa toda a largura */
-        grid-auto-flow: row; /* Garante disposição em linhas */
-        position: relative;
-        top: 64px;
-        right: 27px;
-        text-align: left;
-        font-size: 17px;
-    
+        display: flex; /* Flexbox para organizar status e data */
+        justify-content: space-between; /* Distribui espaço entre elementos */
+        font-size: 14px;
+        margin-top: 10px; /* Espaçamento entre o título e os textos adicionais */
+        position: absolute;
+        top: 70px;
+        right: 50px;
     }
-    
-    
-    
+
     .status {
-        position: relative;
-        right: 290px;
-        bottom: 5px;
-        color: #B1BACB;
-        border: 1px solid;
-        border-radius: 49px;
-        padding: 5px;
-        font-weight: normal;
+        position: absolute;
+        top: 30px;
+        width: 66px;
+        height: 26px;
+        display: flex; /* Ativa o Flexbox */
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+        text-align: center; /* Garante que o texto esteja centralizado */
+        box-sizing: border-box; /* Inclui padding e border no cálculo de largura/altura */
+        margin-top: -30px;
+        left: -310px;
     }
-    
+
     .data {
-        position: relative;
-        right: 280px;
-        top: 3px;
-        color: #B1BACB;
-        font-weight: normal;
+        position: absolute;
+        bottom: 20px;
+        margin-top: 33px;
+        left: -307px;
     }
     
+    .status, .data {
+        font-size: 12px; /* Ajusta tamanho do texto */
+        color: #6c757d; /* Cor do texto */
+    }
     
     .button-conclui {
-        position: relative;
-        right: 330px;
-        top: 125px;
+        margin-top: 10px; /* Espaçamento acima do botão */
+        text-align: right; /* Alinha o botão à direita */
+        position: absolute;
+        top: 90px;
+        right: 110px;
+    }
+    
+    .button-conclui input {
+        padding: 10px 20px; /* Espaçamento interno do botão */
+        background-color: #2d70fd; /* Cor de fundo do botão */
+        color: white; /* Cor do texto */
+        border: none; /* Remove borda padrão */
+        border-radius: 5px; /* Borda arredondada */
+        font-size: 14px;
+        cursor: pointer; /* Muda o cursor para indicar interatividade */
+        position: absolute;
+        top: 45px;
+        left: -130px;
+    }
+    
+    .button-conclui input:hover {
+        background-color: #265ecf; /* Cor do botão ao passar o mouse */
+    }
+    
+    .lista-tarefa li.concluida {
+        text-decoration: line-through; /* Texto riscado */
+        color: gray; /* Texto em cinza */
+        opacity: 0.7; /* Reduz a opacidade */
     }
 
-    .button-conclui input {
-        font-size: 1.2em;
-    }
     footer > div {
-        text-align: end;
+        text-align: center; /* Centraliza o texto no rodapé */
+        right: 0; /* Remove deslocamento horizontal */
+        font-size: 1.2em; /* Reduz o tamanho do texto */
         position: relative;
-        left: 280px;
-        bottom: 20px;
-        
+        top: 770px;
+        left: 330px;
     }
 }
 
