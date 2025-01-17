@@ -453,38 +453,182 @@ footer > div{
 
 
 
-@media(max-width: 300px) {
+@media(max-width: 380px) {
+    html {
+        overflow-x: hidden;
+    }
+
+
+
+
     .titulo-princial {
-        width: 700px;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        left: 150px;
+        font-size: 1.2em;
+    }
+    
+
+
+    .barras {
+        display: grid;
+        grid-template-columns: 1fr; /* Cada item ocupa toda a largura */
+        grid-auto-flow: row; /* Garante disposição em linhas */
+        gap: 5px; /* Espaçamento entre os elementos */
+        align-items: center;
+        position: relative;
+        left: 120px;
+    }
+
+    .barras > .barra1 > input {
+        width: 370px;
+        text-indent: 5px;
+        position: relative;
+        right: 50px;
     }
 
     .barras > .barra2 > input {
         width: 370px;
-        bottom: 20px;
+        text-indent: 5px;
         position: relative;
-        left:  70px;
+        left: 129px;
+        bottom: 19px;
+    }
+    .barra3 {
+        position: relative;
+        left: 285px;
+        bottom: 20px;
     }
 
     .barra3 input {
-        position: relative;
-        right: 270px;
+        width: 370px;
+        font-size: 2em;
     }
+
 
     main {
-        padding-bottom: 290px;
-    
-    }
-    
-
-    footer {
-        width: 500px;
+        left: 0; /* Centraliza o main */
+        width: 100%; /* Adapta para a largura total da tela */
+        height: auto; /* Permite altura dinâmica */
+        gap: 8px;
+        opacity: 1; /* Garante visibilidade */
     }
 
-    footer div{
-        position: relative; 
-        right: 800px;
-        font-size: 3em;
-      }
+    section {
+        right: 0;
+        text-align: center;
+        width: 100%; /* Ajusta a largura para caber na tela */
+        height: auto; /* Permite altura dinâmica */
+    }
+
+    .lista-tarefa {
+        width: 100%; /* Ocupa toda a largura do container */
+        position: relative;
+        padding: 0 10px; /* Adiciona espaçamento lateral */
+    }
+    
+    .lista-tarefa > ul {
+        list-style: none; /* Remove marcadores de lista */
+        padding: 0; /* Remove espaçamento interno */
+        margin: 0; /* Remove espaçamento externo */
+        display: flex;
+        flex-direction: column; /* Alinha os itens em coluna */
+        gap: 10px; /* Espaçamento entre os itens da lista */
+       
+    }
+    
+    .lista-tarefa > ul > li {
+        display: flex; /* Flexbox para conteúdo interno */
+        flex-direction: column; /* Coloca os elementos internos em coluna */
+        padding: 35px; /* Espaçamento interno */
+        padding-right: 50px;
+        background-color: #f9f9f9; /* Cor de fundo para destaque */
+        border: 1px solid #dddddd; /* Borda para separar itens */
+        border-radius: 5px; /* Borda arredondada */
+        width: 98%; /* Ocupa toda a largura disponível */
+        height: 200px;
+        box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+        position: relative;
+        left: 160px;
+        justify-items: ce;
+        }
+    
+    .col-texs {
+        display: flex; /* Flexbox para organizar status e data */
+        justify-content: space-between; /* Distribui espaço entre elementos */
+        font-size: 14px;
+        margin-top: 10px; /* Espaçamento entre o título e os textos adicionais */
+        position: absolute;
+        top: 70px;
+        right: 50px;
+    }
+
+    .status {
+        position: absolute;
+        top: 30px;
+        width: 66px;
+        height: 26px;
+        display: flex; /* Ativa o Flexbox */
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+        text-align: center; /* Garante que o texto esteja centralizado */
+        box-sizing: border-box; /* Inclui padding e border no cálculo de largura/altura */
+        margin-top: -30px;
+        left: -310px;
+    }
+
+    .data {
+        position: absolute;
+        bottom: 20px;
+        margin-top: 33px;
+        left: -307px;
+    }
+    
+    .status, .data {
+        font-size: 12px; /* Ajusta tamanho do texto */
+        color: #6c757d; /* Cor do texto */
+    }
+    
+    .button-conclui {
+        margin-top: 10px; /* Espaçamento acima do botão */
+        text-align: right; /* Alinha o botão à direita */
+        position: absolute;
+        top: 90px;
+        right: 110px;
+    }
+    
+    .button-conclui input {
+        padding: 10px 20px; /* Espaçamento interno do botão */
+        background-color: #2d70fd; /* Cor de fundo do botão */
+        color: white; /* Cor do texto */
+        border: none; /* Remove borda padrão */
+        border-radius: 5px; /* Borda arredondada */
+        font-size: 14px;
+        cursor: pointer; /* Muda o cursor para indicar interatividade */
+        position: absolute;
+        top: 45px;
+        left: -130px;
+    }
+    
+    .button-conclui input:hover {
+        background-color: #265ecf; /* Cor do botão ao passar o mouse */
+    }
+    
+    .lista-tarefa li.concluida {
+        text-decoration: line-through; /* Texto riscado */
+        color: gray; /* Texto em cinza */
+        opacity: 0.7; /* Reduz a opacidade */
+    }
+
+    footer > div {
+        text-align: center; /* Centraliza o texto no rodapé */
+        right: 0; /* Remove deslocamento horizontal */
+        font-size: 1.2em; /* Reduz o tamanho do texto */
+        position: relative;
+        top: 770px;
+        left: 330px;
+    }
 }
 
 
