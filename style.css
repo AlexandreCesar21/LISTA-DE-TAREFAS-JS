@@ -234,9 +234,8 @@ footer > div{
 
     .titulo-princial {
         position: relative;
-        left: 350px;
+        left: 335px;
         font-size: 2em;
-        color: red;
     }
 
 
@@ -261,7 +260,9 @@ footer > div{
     }
 
 
-
+    main {
+        left: 385px;
+    }
 
 
     
