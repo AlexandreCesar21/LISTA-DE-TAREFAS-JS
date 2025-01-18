@@ -542,16 +542,15 @@ footer > div{
         display: flex; /* Flexbox para conteúdo interno */
         flex-direction: column; /* Coloca os elementos internos em coluna */
         padding: 35px; /* Espaçamento interno */
-        padding-right: 50px;
+        padding-left: 60px;
         background-color: #f9f9f9; /* Cor de fundo para destaque */
         border: 1px solid #dddddd; /* Borda para separar itens */
         border-radius: 5px; /* Borda arredondada */
-        width: 98%; /* Ocupa toda a largura disponível */
-        height: 200px;
+        width: 100%; /* Ocupa toda a largura disponível */
+        height: 208px;
         box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
         position: relative;
         left: 160px;
-        justify-items: ce;
         }
     
     .col-texs {

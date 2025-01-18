@@ -47,7 +47,12 @@ function concluirTarefa(botao) {
     tarefa.classList.add("concluida"); // Adiciona a classe "concluida" para estilização
 
     // Atualiza o texto do botão para "Remover"
-    botao.value = "Remover";
+    botao.value = "✓";
+    botao.style.backgroundColor = "#00D8A7"
+    botao.style.width = "52px"
+    botao.style.height = "52px"
+    botao.style.borderRadius = "25px"
+    botao.style.left = "-58px"
     botao.onclick = () => removerTarefa(tarefa); // Altera a função do botão para remover a tarefa
 
     atualizarContador();
