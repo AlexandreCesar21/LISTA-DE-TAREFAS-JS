@@ -230,18 +230,19 @@ footer > div{
     font-size: 1.6em;
 }
 
-@media(max-width: 1200px){
+@media(max-width: 1900px){
 
     .titulo-princial {
         position: relative;
         left: 350px;
         font-size: 2em;
+        color: red;
     }
 
 
     .barras {
         position: relative;
-        left: 144px;
+        left: 134px;
     }
 
     .barra2 {
