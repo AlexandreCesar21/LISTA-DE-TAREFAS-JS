@@ -15,15 +15,15 @@ html {
     line-height: 47.4px;
     letter-spacing: 0.01em;
     text-decoration-skip-ink: none;
-    position: relative;
-    right: 450px;
     color: #11175E;
+    position: relative;
+    right: 5.5rem;
 }
 
 header {
     padding: 30px;
-   text-align: center;
-   justify-items: center;
+    text-align: center;
+    justify-items: center;
 }
 
     .barras {
@@ -32,7 +32,7 @@ header {
         gap: 10px; /* Remove espaçamento entre os elementos */
         align-items: center;
         justify-items: center;
-        margin-right: 14rem;
+     
     }
 
     .barra1{
@@ -65,7 +65,9 @@ header {
         border-radius: 8px 0px 0px 0px;
         border: 1px 0px 0px 0px;
         opacity: 0px;
-        margin-left: 5.7rem;
+        position: relative;
+        right: 2.3rem;
+
     }
 
     .barra2 input {
@@ -79,12 +81,15 @@ header {
     }
 
 
+    .barra3 {
+        position: relative;
+        right: 70px;
+    }
+
     .barra3 input{
         gap: 0px;
         border: 4px;
         opacity: 0px;
-        /*text-align: center;
-        justify-items: center;*/
         position: relative;
         left: 12px;
         background-color: #2D70FD;
@@ -93,7 +98,9 @@ header {
         height: 45px;
         font-size: 18px;
         border-radius: 6px;
+        
     }
+
 
 
 
@@ -237,42 +244,6 @@ footer > div{
     font-size: 1.6em;
 }
 
-@media(max-width: 1535px){
-
-    .titulo-princial {
-        position: relative;
-        left: 335px;
-        font-size: 2em;
-    }
-
-
-    .barras {
-        margin-left: 16.4rem;
-    }
-    
-   .barra2 {
-        position: relative;
-        right: 8rem;
-    }
-
-    .barra3 {
-        position: relative;
-        right: 10rem;
-        font-weight: 400;
-    }
-
-    
-
-
-    main {
-        position: relative;
-        right: 4px;
-    }
-
-
-    
-
-}
 
 
 @media(max-width: 600px) {
@@ -286,8 +257,16 @@ footer > div{
         left: 10rem;
     }
     
+    main {
+        position: relative;
+        left: 11rem;
+    }
     
-
+    footer div{
+        text-align: end;
+        position: relative;
+        left: 24rem;
+    }
 
 
 }
@@ -296,8 +275,8 @@ footer > div{
 
 
 
-/*
-@media(max-width: 380px) {
+
+@media(max-width: 400px) {
     html {
         overflow-x: hidden;
     }
@@ -310,8 +289,13 @@ footer > div{
         overflow: hidden;
         position: relative;
         left: 150px;
-        font-size: 1.2em;
+        width: 53rem;
     }
+
+    .titulo-princial h1 {
+        font-size: 2.7em;
+    }
+
     
 
 
@@ -336,12 +320,12 @@ footer > div{
         width: 370px;
         text-indent: 5px;
         position: relative;
-        left: 129px;
+        right: 12.1px;
         bottom: 19px;
     }
     .barra3 {
         position: relative;
-        left: 285px;
+        left: -3.7rem;
         bottom: 20px;
     }
 
@@ -369,6 +353,7 @@ footer > div{
     .lista-tarefa {
         width: 100%; 
         position: relative;
+        left: 108px;
         padding: 0 10px;
     }
     
@@ -473,4 +458,3 @@ footer > div{
         left: 330px;
     }
 }
-*/

@@ -52,11 +52,39 @@ function concluirTarefa(botao) {
     botao.style.width = "52px"
     botao.style.height = "52px"
     botao.style.borderRadius = "25px"
-    botao.style.left = "-58px"
+    botao.style.left = "-90px"
     botao.onclick = () => removerTarefa(tarefa); // Altera a função do botão para remover a tarefa
 
+    
+    ajustarPosicao(botao);
+
+    
+    
     atualizarContador();
 }
+
+
+
+function ajustarPosicao(botao) {
+    if (window.innerWidth <= 400) {
+        botao.style.position = "absolute"; // Garante que o posicionamento funcione
+        botao.style.right = "-40px"; // Ajuste fino para telas pequenas
+    } else if (window.innerWidth <= 600) {
+        botao.style.right = "-30px"; // Ajuste intermediário
+    } else {
+        botao.style.right = "-58px"; // Posição padrão para telas grandes
+    }
+}
+
+// Atualiza a posição dos botões ao redimensionar a tela
+window.addEventListener("resize", () => {
+    document.querySelectorAll(".concluida input[type='button']").forEach(ajustarPosicao);
+});
+
+
+
+
+
 
 // Função para remover uma tarefa
 function removerTarefa(tarefa) {
