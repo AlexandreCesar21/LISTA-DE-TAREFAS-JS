@@ -236,7 +236,7 @@ footer > div{
     color: #B1BACB;
     font-size: 1.6em;
 }
-
+/*
 @media(max-width: 1535px){
 
     .titulo-princial {
@@ -274,7 +274,7 @@ footer > div{
 
 }
 
-
+*/
 @media(max-width: 600px) {
 
     html {
