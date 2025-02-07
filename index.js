@@ -46,14 +46,14 @@ function concluirTarefa(botao) {
     const tarefa = botao.closest("li"); // Seleciona o <li> mais próximo
     tarefa.classList.add("concluida"); // Adiciona a classe "concluida" para estilização
 
-    // Atualiza o texto do botão para "Remover"
+    
     botao.value = "✓";
     botao.style.backgroundColor = "#00D8A7"
     botao.style.width = "52px"
     botao.style.height = "52px"
     botao.style.borderRadius = "25px"
     botao.style.left = "-90px"
-    botao.onclick = () => removerTarefa(tarefa); // Altera a função do botão para remover a tarefa
+    
 
     
     ajustarPosicao(botao);
@@ -86,11 +86,6 @@ window.addEventListener("resize", () => {
 
 
 
-// Função para remover uma tarefa
-function removerTarefa(tarefa) {
-    listaTarefa.removeChild(tarefa); // Remove o elemento <li> da lista
-    atualizarContador();
-}
 
 // Função para atualizar o contador de tarefas concluídas
 function atualizarContador() {

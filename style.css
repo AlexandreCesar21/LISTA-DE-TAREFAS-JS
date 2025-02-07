@@ -458,3 +458,124 @@ footer > div{
         left: 330px;
     }
 }
+
+
+
+
+@media(max-width: 320px) {
+
+    .barra1 input {
+        font-size: 18px;
+    }
+
+    .barra2 input {
+        font-size: 18px;
+    }
+
+    .lista-tarefa > ul {
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+        display: flex;
+        flex-direction: column; 
+        gap: 10px; 
+        position: relative;
+        right: 27px;
+       
+    }
+    
+    .lista-tarefa > ul > li {
+        display: flex; 
+        flex-direction: column; 
+        padding: 35px; 
+        padding-left: 50px;
+        background-color: #f9f9f9; 
+        border: 1px solid #dddddd; 
+        border-radius: 5px; 
+        width: 117%; 
+        height: 248px;
+        box-sizing: border-box; 
+        position: relative;
+        left: 160px;    
+    }
+        
+    
+    .col-texs {
+        display: flex; 
+        justify-content: space-between; 
+        font-size: 14px;
+        margin-top: 10px; 
+        position: absolute;
+        top: 70px;
+        right: 50px;
+    }
+
+    .status {
+        position: absolute;
+        top: 14px;
+        width: 96px;
+        height: 28px;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
+        box-sizing: border-box; 
+        margin-top: -11px;
+        left: -310px;
+    }
+
+    .data {
+        position: absolute;
+        bottom: 20px;
+        margin-top: 44px;
+        left: -307px;
+      
+    }
+    
+    .status, .data {
+        font-size: 18px; 
+        color: #6c757d; 
+    }
+    
+    .button-conclui {
+        margin-top: 10px; 
+        text-align: right; 
+        position: absolute;
+        top: 122px;
+        right: 110px;
+    }
+    
+    .button-conclui input {
+        padding: 10px 20px; 
+        background-color: #2d70fd; 
+        color: white; 
+        border: none; 
+        border-radius: 5px; 
+        font-size: 16px;
+        cursor: pointer; 
+        position: absolute;
+        top: 36px;
+        left: -130px;
+        width: 116px;
+        height: 51px;
+    }
+    
+    .button-conclui input:hover {
+        background-color: #265ecf; 
+    }
+    
+    .lista-tarefa li.concluida {
+        text-decoration: line-through; 
+        color: gray; 
+        opacity: 0.7; 
+    }
+
+    footer > div {
+        text-align: center;
+        right: 0;
+        font-size: 2em;
+        position: relative;
+        top: 740px;
+        left: 549px;
+    }
+}
